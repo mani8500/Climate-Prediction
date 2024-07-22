@@ -1,0 +1,25 @@
+Data Set Information:
+
+This dataset contains records of simulation crashes encountered during climate model uncertainty quantification (UQ) ensembles. 
+
+Ensemble members were constructed using a Latin hypercube method in LLNL's UQ Pipeline software system to sample the uncertainties of 18 model parameters within the Parallel Ocean Program (POP2) component of the Community Climate System Model (CCSM4). 
+
+Three separate Latin hypercube ensembles were conducted, each containing 180 ensemble members. 46 out of the 540 simulations failed for numerical reasons at combinations of parameter values. 
+
+The goal is to use classification to predict simulation outcomes (fail or succeed) from input parameter values, and to use sensitivity analysis and feature selection to determine the causes of simulation crashes. 
+
+Further details about the data and methods are given in the publication 'Failure Analysis of Parameter-Induced Simulation Crashes in Climate Models,' Geoscientific Model Development ([Web Link]).
+
+
+Attribute Information:
+
+The goal is to predict climate model simulation outcomes (column 21, fail or succeed) given scaled values of climate model input parameters (columns 3-20). 
+
+Column 1: Latin hypercube study ID (study 1 to study 3) 
+
+Column 2: simulation ID (run 1 to run 180) 
+
+Columns 3-20: values of 18 climate model parameters scaled in the interval [0, 1] 
+
+Column 21: simulation outcome (0 = failure, 1 = success)
+
